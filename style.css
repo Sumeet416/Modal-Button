@@ -1,0 +1,65 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    height: 100vh;
+    background-color: black;
+}
+
+.openmodal{
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.popupmodal{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    min-width: 100vw;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1) ;
+    visibility: hidden;
+    transition-duration: 300ms;
+ }
+
+.closepopup{
+    border: none;
+    padding: 4px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.189);
+}
+
+p{
+    padding-block: 20px;
+    text-align: justify;
+}
+
+h2{
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.popup_open{
+    transform: translate(-50%, -50%) scale(1) ;
+    visibility: visible;
+    transition-duration: 500ms;
+}
+
